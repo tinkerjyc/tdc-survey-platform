@@ -57,19 +57,19 @@ const Login = ({ login, isAuthenticated }) => {
                         className="form-input"
                     />
                   </div>
-                  {/*<select*/}
-                  {/*  name="role"*/}
-                  {/*  id="userFld"*/}
-                  {/*  onChange={onChange}*/}
-                  {/*  className="form-control"*/}
-                  {/*>*/}
-                  {/*  <option value="user">User</option>*/}
-                  {/*  <option value="admin">Admin</option>*/}
-                  {/*</select>*/}
+                  <select
+                    name="role"
+                    id="userFld"
+                    onChange={onChange}
+                    className="form-control"
+                  >
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                  </select>
                   <button type="submit" className="form-format-btn">Log In</button>
-                  {/*<p className="my-1">*/}
-                  {/*  Don't have an account? <Link to="/register">Register</Link>*/}
-                  {/*</p>*/}
+                  <p className="my-1">
+                    Don't have an account? <Link to="/register">Register</Link>
+                  </p>
                 </form>
               </div>
             </div>

@@ -1,7 +1,7 @@
 {
-  "name": "moviedb",
+  "name": "TDC Survey Platform",
   "version": "1.0.0",
-  "description": "Website for movie information of Movie Database",
+  "description": "Website for tdc survey services",
   "main": "server.js",
   "scripts": {
     "start": "node server",
@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "author": "CS5610",
+  "author": "Yicheng Jiang",
   "license": "NEU",
   "dependencies": {
     "axios": "^0.19.2",

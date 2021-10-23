@@ -32,27 +32,29 @@ const Login = ({ login, isAuthenticated }) => {
           <div className="auth-bg-login">
             <div className=" form-format">
 
-              <h1 className="form-format-title"> Login</h1>
+              <h1 className="form-format-title">&nbsp;&nbsp;&nbsp;Login</h1>
               <div className="form-format-content">
                 <form className="form" onSubmit={onSubmit}>
                   <div className="form-group">
                     <input
                         type="email"
-                        placeholder="Username or Email Address"
+                        placeholder="    Username or Email Address"
                         name="email"
                         value={email}
                         onChange={onChange}
                         required
+                        className="form-input"
                     />
                   </div>
                   <div className="form-group">
                     <input
                         type="password"
-                        placeholder="Password"
+                        placeholder="    Password"
                         name="password"
                         value={password}
                         onChange={onChange}
                         minLength="6"
+                        className="form-input"
                     />
                   </div>
                   {/*<select*/}

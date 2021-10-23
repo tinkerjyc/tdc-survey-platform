@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
-import HomeScreen from './components/layout/home-screen';
+import HomeScreen from './components/auth/Login';
 import Routes from './components/routing/Routes';
 import { LOGOUT } from './actions/types';
 
@@ -33,7 +33,7 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Fragment>
-          <Navbar />
+          {/*<Navbar />*/}
           <Switch>
             <Route exact path="/" component={HomeScreen} />
             <Route path={["/search", "/search/:title", "/search/:title/page/:pageId"]} exact={true}>

@@ -160,6 +160,18 @@ ul {
   font-size: 33px;
   font-weight: bold;
   font-family: Lato, Helvetica, sans-serif;
+  margin: auto;
+}
+
+.form-input{
+  width: 100%;
+  border-radius: 5px;
+  border: #F4FAFC;
+  background-color: #F4FAFC;
+  height: 50px;
+  font-size: 17px;
+  font-weight: normal;
+  color: #467E8E;
 }
 
 .form-format-btn {

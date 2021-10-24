@@ -35,7 +35,7 @@ const Profile = ({
                         <p className="">
                             How you feel about movie?
                         </p>
-                        <p className="">Want to share your thoughts about movie search with others?</p>
+                        <p className="">Dashboard place holder</p>
                         <div className="my-2">
                             <Link to="/edit-profile" className="btn btn-dark">
                                 Edit thoughts
@@ -47,7 +47,7 @@ const Profile = ({
                     </>
                 ) : (
                     <>
-                        <p className="">Want to share your thoughts about movie search with others?</p>
+                        <p className="">Dashboard place holder</p>
                         <div className="my-2">
                             <Link to="/create-profile" className="btn btn-primary my-1">
                                 Create thoughts
@@ -65,7 +65,7 @@ const Profile = ({
           user && user.role === "admin" &&
               <ManageUsers/>
         }
-      <SearchScreenLogin/>
+      {/*<SearchScreenLogin/>*/}
     </ >
   );
 };

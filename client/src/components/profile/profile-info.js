@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { update } from '../../actions/auth';
-
+import { logout } from '../../actions/auth';
 
 
 
@@ -87,6 +87,7 @@ const ProfileInfo = ({
                     {/*        </a>*/}
                     {/*    </div>*/}
                     {/*</div>*/}
+                    <button onClick={logout} href="index"></button>
                     <input type="submit" value="update" className="btn btn-primary my-1" />
                 </form>
             </div>

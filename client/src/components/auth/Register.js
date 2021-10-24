@@ -85,7 +85,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                 onChange={onChange}
                 className="form-control"
               >
-                <option value="user">User</option>
+                {/*<option value="user">User</option>*/}
                 <option value="admin">Admin</option>
               </select>
               <input type="submit" className="btn btn-primary" value="Register" />

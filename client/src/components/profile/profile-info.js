@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { update } from '../../actions/auth';
 
+
+
+
 const ProfileInfo = ({
                          user,
                          update
@@ -28,7 +31,7 @@ const ProfileInfo = ({
 
     return (
         <>
-            <div className="mr-3">
+            <div className="mr-3 background-color">
                 <h1 className="mx-auto text-primary">My Profile Info</h1>
                 <form onSubmit={onSubmit}>
                     <div className="form-group row">

@@ -5,12 +5,13 @@ import PropTypes from 'prop-types';
 import { login } from '../../actions/auth';
 import skylight from '../../materials/skyline-light.png';
 import logo from '../../materials/logo.png';
+import {Helmet} from 'react-helmet';
 
 const Login = ({ login, isAuthenticated }) => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
-    role:'user'
+    role:'admin'
   });
 
   const { email, password, role } = formData;
@@ -28,7 +29,11 @@ const Login = ({ login, isAuthenticated }) => {
   }
 
   return (
+
         <Fragment>
+          <Helmet>
+            <style>{'body { background-color: #D1E6EB; }'}</style>
+          </Helmet>
           <div className="auth-bg-login">
             <div className=" form-format">
 
@@ -57,19 +62,19 @@ const Login = ({ login, isAuthenticated }) => {
                         className="form-input"
                     />
                   </div>
-                  <select
-                    name="role"
-                    id="userFld"
-                    onChange={onChange}
-                    className="form-control"
-                  >
-                    <option value="user">User</option>
-                    <option value="admin">Admin</option>
-                  </select>
+                  {/*<select*/}
+                  {/*  name="role"*/}
+                  {/*  id="userFld"*/}
+                  {/*  onChange={onChange}*/}
+                  {/*  className="form-control"*/}
+                  {/*>*/}
+                  {/*  <option value="user">User</option>*/}
+                  {/*  <option value="admin">Admin</option>*/}
+                  {/*</select>*/}
                   <button type="submit" className="form-format-btn">Log In</button>
-                  <p className="my-1">
-                    Don't have an account? <Link to="/register">Register</Link>
-                  </p>
+                  {/*<p className="my-1">*/}
+                  {/*  Don't have an account? <Link to="/register">Register</Link>*/}
+                  {/*</p>*/}
                 </form>
               </div>
             </div>

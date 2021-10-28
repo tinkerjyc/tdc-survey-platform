@@ -2,7 +2,7 @@
 The modeling is React and MongoDB
 
 ### Install dependencies
-Run `npm install` from the `clinents` folder.
+Run `npm install` from both the `clients` folder and `tdc-survey-platform`.
 
 ### Setting up project
 Start dev server with `npm run dev`.

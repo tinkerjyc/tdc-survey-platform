@@ -2,10 +2,10 @@
 The modeling is React and MongoDB
 
 ### Install dependencies
-Run `npm install` from the `functions` folder.
+Run `npm install` from the `clinents` folder.
 
 ### Setting up project
-Start dev server with `npm start`.
+Start dev server with `npm run dev`.
 
 ### Linting
 Lint your code (ensure code style is consistent) with `npm run lint`. This command will fix some minor styling

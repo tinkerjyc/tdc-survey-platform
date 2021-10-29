@@ -1,11 +1,13 @@
 # TDC Survey Platform
-The modeling is React and MongoDB .
+The modeling is React and MongoDB.
 
 ### Install dependencies
-Run `npm install` from both the `clients` folder and `tdc-survey-platform`.
+Run `npm install` from both the `client` folder and `tdc-survey-platform`.
 
 ### Setting up project
 Start dev server with `npm run dev`.
+The website link is (http://localhost:3000/)
+)
 
 ### Linting
 Lint your code (ensure code style is consistent) with `npm run lint`. This command will fix some minor styling
